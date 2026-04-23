@@ -1,0 +1,101 @@
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: #fcfbf7;
+}
+
+h1, h2, h3, .brand-font {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(252, 251, 247, 0.95);
+  border-bottom: 1px solid #eee;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('hero.jpeg') center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.btn-custom {
+  background-color: #556b2f; /* Olive Green */
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #3d4d21;
+  color: white;
+}
+
+/* Product Gallery */
+.product-card {
+  border: none;
+  background: none;
+  transition: transform 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+}
+.product-img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  background-color: #eee;
+}
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Sembunyikan scrollbar untuk Firefox */
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Sembunyikan scrollbar untuk Chrome/Safari */
+}
+.product-card-scroll {
+  min-width: 280px; /* Lebar tiap item */
+  max-width: 280px;
+}
+.scroll-wrapper {
+  position: relative;
+}
+/* Navigasi Button (Opsional) */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+}
+.btn-left { left: -20px; }
+.btn-right { right: -20px; }
+
+/* Testimonials */
+.testimonial-section {
+  background-color: #f4f1ea;
+}
+
+/* Footer */
+footer {
+  background-color: #2c2c2c;
+  color: #d1d1d1;
+}
